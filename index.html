@@ -43,11 +43,11 @@
   main{
     position:relative;z-index:2;min-height:100%;
     display:flex;flex-direction:column;align-items:center;justify-content:center;
-    padding:clamp(16px,3.5vh,56px) 16px clamp(12px,2vh,40px);text-align:center;gap:clamp(12px,2.8vh,46px);
+    padding:clamp(16px,3.5vh,56px) 16px clamp(12px,2vh,40px);text-align:center;gap:clamp(10px,2.2vh,40px);
   }
 
   /* الرُّقيم: يظهر نصفه فقط حيث يسقط الضوء */
-  .stage{position:relative;width:min(360px,80vw,32vh);aspect-ratio:4/3;perspective:900px}
+  .stage{position:relative;width:min(400px,80vw,42vh);aspect-ratio:4/3;perspective:900px}
   .tablet{
     position:absolute;inset:0;border-radius:24px 30px 22px 32px;
     background:
@@ -68,7 +68,7 @@
   /* الاسم: ينكشف ببطء من الظل */
   .brand{
     font-family:var(--display);font-weight:400;direction:ltr;
-    font-size:clamp(40px,min(10vw,11vh),112px);letter-spacing:.14em;line-height:1;margin-inline-start:.14em;
+    font-size:clamp(40px,min(10vw,9vh),112px);letter-spacing:.14em;line-height:1;margin-inline-start:.14em;
     background:linear-gradient(100deg,#6E6252 0%,var(--champagne) 38%,#FFF6DF 50%,var(--champagne) 62%,#6E6252 100%);
     background-size:250% 100%;background-position:100% 0;
     -webkit-background-clip:text;background-clip:text;color:transparent;
@@ -81,7 +81,7 @@
   @keyframes line{to{width:min(240px,50vw)}}
   .brand-ar{margin-top:clamp(6px,1.4vh,14px);font-size:clamp(20px,min(3.2vw,3.7vh),29px);color:var(--gold);letter-spacing:.04em;opacity:0;animation:fade 1.4s ease 5.6s forwards}
 
-  .story{max-width:44ch;font-size:clamp(17px,min(2.8vw,2.9vh),24px);line-height:1.75;color:rgba(239,227,200,.86);opacity:0;animation:fade 1.6s ease 6.2s forwards}
+  .story{max-width:44ch;font-size:clamp(17px,min(2.8vw,2.5vh),24px);line-height:1.6;color:rgba(239,227,200,.86);opacity:0;animation:fade 1.6s ease 6.2s forwards}
   .story .line{display:block}
   .story .line + .line{margin-top:.5em}
   .story .line + .line.tight{margin-top:0}
